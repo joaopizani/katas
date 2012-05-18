@@ -1,0 +1,13 @@
+Use the command like this:
+==========================
+
+./dist/build/tonesynthesizer/tonesynthesizer <file-name> <tempo> | aplay -t raw -f U8 -r 16000
+
+the program will generate the byte stream, which pipe'd to aplay will be heard by you :)
+
+<filename> is the name of the file containing the notes to be played. <tempo> is in BPM.
+This file has the following format:
+<note>, <note>, ...
+
+Where <note> is like:
+c, c#, d, d#, ..., b, c', c#', ..., b'
