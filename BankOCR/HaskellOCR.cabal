@@ -2,57 +2,51 @@
 -- options, see
 -- http://www.haskell.org/cabal/release/cabal-latest/doc/users-guide/authors.html#pkg-descr.
 -- The name of the package.
-Name:                HaskellOCR
+Name: HaskellOCR
 
 -- The package version. See the Haskell package versioning policy
 -- (http://www.haskell.org/haskellwiki/Package_versioning_policy) for
 -- standards guiding when and how versions should be incremented.
-Version:             0.1
+Version: 0.1
 
 -- A short (one-line) description of the package.
-Synopsis:            Just a Coding Dojo problem
-
--- A longer description of the package.
--- Description:         
+Synopsis: Just a Coding Dojo problem
 
 -- The license under which the package is released.
-License:             BSD3
+License: BSD3
 
 -- The file containing the license text.
-License-file:        LICENSE
+License-file: LICENSE
 
 -- The package author(s).
-Author:              João Paulo Pizani Flor
+Author: João Paulo Pizani Flor
 
--- An email address to which users can send suggestions, bug reports,
--- and patches.
-Maintainer:          joaopizani@gmail.com
+-- An email address to which users can send suggestions, bug reports, and patches.
+Maintainer: joaopizani@gmail.com
 
--- A copyright notice.
--- Copyright:           
+Category: Language
 
-Category:            Language
-
-Build-type:          Simple
+Build-type: Simple
 
 -- Extra files to be distributed with the package, such as examples or
 -- a README.
 -- Extra-source-files:  
 
 -- Constraint on the version of Cabal needed to build this package.
-Cabal-version:       >=1.2
+Cabal-version: >=1.2
 
 
 Executable HaskellOCR
-  -- .hs or .lhs file containing the Main module.
-  Main-is:	OCR.hs
-  
-  -- Packages needed in order to build this package.
-  Build-depends:       haskell98, base, split
-  
-  -- Modules not exported by this package.
-  -- Other-modules:       
-  
-  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
-  -- Build-tools:         
-  
+    -- .hs or .lhs file containing the Main module.
+    Main-is: OCR.hs
+
+    -- Packages needed in order to build this package.
+    Build-depends:
+        base,
+        split
+
+    -- Modules not exported by this package.
+    -- Other-modules:
+
+    -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+    -- Build-tools:

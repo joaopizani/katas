@@ -1,12 +1,12 @@
 module Main where
 
-import Data.List
-import Data.Maybe
-import Data.List.Split
+import Data.List (transpose, lookup)
+import Data.Maybe (fromJust)
+import Data.List.Split (chunksOf)
 
 main = interact (\input -> parse input ++ "\n")
 
-parse i = map (getDigit . transpose . tail) $ chunk 4 $ dummy : columns i
+parse i = map (getDigit . transpose . tail) $ chunksOf 4 $ dummy : columns i
     where getDigit = fromJust . (flip lookup) dTable
           columns  = transpose . lines
           dummy    = "   "
